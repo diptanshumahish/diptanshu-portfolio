@@ -68,13 +68,21 @@ export default function WorkItem({
                     alt="wg"
                     dataScroll={imageScroll}
                 />
-                <Image
+                <CommonImage
+                    imageLink={mainImagery}
+                    height={450}
+                    width={450}
+                    alt="wg"
+                    classList="lg:hidden flex w-full h-auto aspect-square object-cover"
+                />
+
+                {/* <Image
                     src={mainImagery}
                     height={450}
                     width={450}
                     alt="wg"
                     className="lg:hidden flex w-full h-auto aspect-square object-cover"
-                />
+                /> */}
             </div>
             <div className="lg:w-[55%] w-full flex flex-col text-white gap-4 ">
                 <div className="flex lg:flex-row flex-col-reverse justify-between lg:items-center items-start">
