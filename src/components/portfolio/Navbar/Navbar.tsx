@@ -7,13 +7,12 @@ export default function Navbar() {
         <div className="fixed left-[5vw] right-[5vw] top-2 z-20   ">
             <div className="relative backdrop-blur-md py-2 flex border bg-bg-back bg-opacity-20 border-black rounded-full justify-center items-center">
                 {" "}
-                <Link href="/">
+                <Link href="/" className="absolute left-6">
                     <Image
                         src="/Assets/mini-logo.svg"
                         height={30}
                         width={30}
                         alt="dptsnhu logo "
-                        className="absolute left-6"
                     />
                 </Link>
                 <Image

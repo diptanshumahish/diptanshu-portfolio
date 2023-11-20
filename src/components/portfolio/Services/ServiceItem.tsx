@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import CommonImage from "@/components/Common/CommonImage";
 
 interface Props {
     name: string;
@@ -48,15 +49,22 @@ export default function ServiceItem({
                 <span className="lg:text-[18px] text-[14px]">{details}</span>
             </div>
             <div className="lg:p-0 py-[4vh]">
-                <Image
-                    data-scroll
-                    data-scroll-speed={imageScrollSpeed}
+                <CommonImage
+                    dataScroll={imageScrollSpeed}
+                    imageLink={mainImage}
+                    alt={name}
+                    classList="w-full"
+                    height={1200}
+                    width={1400}
+                />
+                {/* <Image
+                   
                     src={mainImage}
                     height={1200}
                     width={1400}
                     alt={name}
                     className="w-full "
-                />
+                /> */}
             </div>
         </div>
     );

@@ -3,20 +3,29 @@ import SectionDetails from "@/components/Common/SectionDetails";
 import React from "react";
 import Image from "next/image";
 import ContactForm from "./ContactForm";
+import CommonImage from "@/components/Common/CommonImage";
 export default function Contact() {
     return (
         <div>
-            <div className="lg:px-[5vw] py-[5vh] p-2  flex lg:flex-row flex-col justify-between lg:gap-0 gap-4 lg:items-center w-full">
+            <div className="lg:px-[5vw] z-10 py-[5vh] p-2  flex lg:flex-row flex-col justify-between lg:gap-0 gap-4 lg:items-center w-full">
                 <AnimatedText content={["Now how ", "do we", "connect?"]} />
                 <SectionDetails sectionNumber={3} />
             </div>
+            <div className="h-[8vh] w-full" />
             <div className="flex lg:flex-row flex-col-reverse bg-[#111]   ">
-                <Image
+                {/* <Image
                     src="/Assets/Contact/me.png"
                     height={900}
                     width={900}
                     alt="Diptanshu Mahish"
                     className="lg:w-[50%] w-full h-auto grayscale object-cover"
+                /> */}
+                <CommonImage
+                    alt="Diptanshu Mahish"
+                    classList="lg:w-[50%] w-full h-auto grayscale object-cover"
+                    height={900}
+                    width={900}
+                    imageLink="/Assets/Contact/me.png"
                 />
                 <div className="lg:w-[50%] w-full h-full p-[5vw] ">
                     <div className="flex  items-center gap-4">

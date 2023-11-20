@@ -3,6 +3,7 @@ import Image from "next/image";
 import Tags from "@/components/Common/Tags";
 import Link from "next/link";
 import { PlayCircle, GithubIcon } from "lucide-react";
+import CommonImage from "@/components/Common/CommonImage";
 
 interface Props {
     backgroundColor: string;
@@ -50,7 +51,7 @@ export default function WorkItem({
                 className="absolute left-0  w-full opacity-20 -z-0 object-center"
             />
             <div className="lg:z-10 ">
-                <Image
+                {/* <Image
                     data-scroll
                     data-scroll-speed={imageScroll}
                     src={mainImagery}
@@ -58,6 +59,14 @@ export default function WorkItem({
                     width={450}
                     alt="wg"
                     className="lg:flex hidden justify-center items-center"
+                /> */}
+                <CommonImage
+                    height={450}
+                    width={450}
+                    imageLink={mainImagery}
+                    classList="lg:flex hidden justify-center items-center"
+                    alt="wg"
+                    dataScroll={imageScroll}
                 />
                 <Image
                     src={mainImagery}

@@ -17,7 +17,7 @@ export default function AnimatedText({ content }: Props) {
         gsap.from(charText, {
             scrollTrigger: {
                 trigger: aniText.current,
-                start: "0px bottom",
+                start: "top bottom",
                 end: "bottom+=300px bottom",
                 scrub: true,
             },

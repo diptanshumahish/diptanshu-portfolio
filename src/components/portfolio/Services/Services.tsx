@@ -5,7 +5,7 @@ import ServiceItem from "./ServiceItem";
 
 export default function Services() {
     return (
-        <div className="overflow-hidden h-fit">
+        <div className="overflow-hidden h-min">
             <div className="lg:px-[5vw] py-[5vh] p-2  flex lg:flex-row flex-col justify-between lg:gap-0 gap-4 lg:items-center w-full">
                 <AnimatedText
                     content={["And Now ", "What Services", "Do I Offer?"]}
