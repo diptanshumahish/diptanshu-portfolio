@@ -46,7 +46,7 @@ export default function AnimatedText({ content }: Props) {
             scrollTrigger: {
                 trigger: aniTextElement,
                 start: "top bottom",
-                end: "bottom+=300px bottom",
+                end: "bottom+=100px bottom",
                 scrub: 1,
             },
             stagger: 0.05,
@@ -57,7 +57,7 @@ export default function AnimatedText({ content }: Props) {
 
     return (
         <div
-            className="relative z-20 flex flex-col overflow-hidden"
+            className="relative flex flex-col overflow-hidden"
             ref={aniText}
             key={content[0]}
         >

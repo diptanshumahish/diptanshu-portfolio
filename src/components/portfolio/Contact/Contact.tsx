@@ -7,13 +7,13 @@ import CommonImage from "@/components/Common/CommonImage";
 import Heading from "@/components/Common/Heading";
 export default function Contact() {
     return (
-        <div>
+        <div className="">
             <Heading
                 heading={["Now how ", "do we", "connect?"]}
                 number={3}
                 key="Contact"
             />
-            <div className="h-[8vh] w-full" />
+
             <div className="flex lg:flex-row flex-col-reverse bg-[#111]   ">
                 {/* <Image
                     src="/Assets/Contact/me.png"

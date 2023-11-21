@@ -82,6 +82,7 @@ export default function WorkItem({
                     width={450}
                     alt="wg"
                     className="lg:hidden flex w-full h-auto aspect-square object-cover"
+                    blurDataURL=""
                 />
             </div>
             <div className="lg:w-[55%] w-full flex flex-col text-white gap-4 ">
