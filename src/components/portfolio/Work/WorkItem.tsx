@@ -51,7 +51,7 @@ export default function WorkItem({
                 className="absolute left-0  w-full opacity-20 -z-0 object-center"
             />
             <div className="lg:z-10 ">
-                {/* <Image
+                <Image
                     data-scroll
                     data-scroll-speed={imageScroll}
                     src={mainImagery}
@@ -59,30 +59,30 @@ export default function WorkItem({
                     width={450}
                     alt="wg"
                     className="lg:flex hidden justify-center items-center"
-                /> */}
-                <CommonImage
+                />
+                {/* <CommonImage
                     height={450}
                     width={450}
                     imageLink={mainImagery}
                     classList="lg:flex hidden justify-center items-center"
                     alt="wg"
                     dataScroll={imageScroll}
-                />
-                <CommonImage
+                /> */}
+                {/* <CommonImage
                     imageLink={mainImagery}
                     height={450}
                     width={450}
                     alt="wg"
                     classList="lg:hidden flex w-full h-auto aspect-square object-cover"
-                />
+                /> */}
 
-                {/* <Image
+                <Image
                     src={mainImagery}
                     height={450}
                     width={450}
                     alt="wg"
                     className="lg:hidden flex w-full h-auto aspect-square object-cover"
-                /> */}
+                />
             </div>
             <div className="lg:w-[55%] w-full flex flex-col text-white gap-4 ">
                 <div className="flex lg:flex-row flex-col-reverse justify-between lg:items-center items-start">

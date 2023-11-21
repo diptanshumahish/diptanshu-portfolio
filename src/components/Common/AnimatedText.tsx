@@ -6,7 +6,6 @@ import SplitType from "split-type";
 
 interface Props {
     content: string[];
-    ref: React.MutableRefObject<null>;
 }
 gsap.registerPlugin(ScrollTrigger);
 export default function AnimatedText({ content }: Props) {
@@ -57,7 +56,11 @@ export default function AnimatedText({ content }: Props) {
     }, []);
 
     return (
-        <div className="relative flex flex-col overflow-hidden" ref={aniText}>
+        <div
+            className="relative z-20 flex flex-col overflow-hidden"
+            ref={aniText}
+            key={content[0]}
+        >
             {content.map((ele, idx) => {
                 return (
                     <p

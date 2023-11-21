@@ -43,7 +43,7 @@ export default function Work() {
                         "Formsubmit",
                         "Sendgrid",
                     ]}
-                    mainImagery="/Assets/work/wg2.png"
+                    mainImagery="/Assets/work/wg2.webp"
                     LiveLink=""
                     githubLink=""
                 />
@@ -69,7 +69,7 @@ export default function Work() {
                         "Playbook",
                         "Vercel",
                     ]}
-                    mainImagery="/Assets/work/ks.png"
+                    mainImagery="/Assets/work/ks.webp"
                     LiveLink="https://katzespeaks.vercel.app/"
                     githubLink="https://github.com/diptanshumahish/katze-speaks-website"
                 />
@@ -92,7 +92,7 @@ export default function Work() {
                         "Playbook",
                         "Figma",
                     ]}
-                    mainImagery="/Assets/work/wally.png"
+                    mainImagery="/Assets/work/wally.webp"
                     LiveLink="https://katzespeaks.vercel.app/"
                     githubLink="https://github.com/diptanshumahish/katze-speaks-website"
                 />
@@ -108,7 +108,7 @@ export default function Work() {
                     contentMiniDesc="A flutter Zen clock app ( ✅Available on Play Store)"
                     contentName="Zen Clock/ Pomodoro"
                     contentTags={["Flutter", "Figma"]}
-                    mainImagery="/Assets/work/zen.png"
+                    mainImagery="/Assets/work/zen.webp"
                     LiveLink="https://katzespeaks.vercel.app/"
                     githubLink="https://github.com/diptanshumahish/katze-speaks-website"
                 />

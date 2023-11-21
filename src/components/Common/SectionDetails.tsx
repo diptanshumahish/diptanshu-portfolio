@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface Props {
     sectionNumber: number;
-    ref: React.MutableRefObject<null>;
 }
 gsap.registerPlugin(ScrollTrigger);
 export default function SectionDetails({ sectionNumber }: Props) {
@@ -50,6 +49,7 @@ export default function SectionDetails({ sectionNumber }: Props) {
         <div
             className="w-[40%] flex flex-col lg:items-end items-start overflow-hidden"
             ref={secText}
+            key={sectionNumber}
         >
             <span className="overflow-hidden">SECTION</span>
             <span className="w-full h-1 bg-black"></span>
