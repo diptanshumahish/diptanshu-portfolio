@@ -1,5 +1,10 @@
 "use client";
-import React, { createContext, useEffect, useState, ReactNode } from "react";
+import React, {
+    createContext,
+    useState,
+    ReactNode,
+    useLayoutEffect,
+} from "react";
 
 interface SmoothScrollContextProps {
     scroll: any;
@@ -20,7 +25,7 @@ export const SmoothScrollProvider: React.FC<SmoothScrollProviderProps> = ({
 }) => {
     const [scroll, setScroll] = useState<any | null>(null);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (!scroll) {
             (async () => {
                 try {

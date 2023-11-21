@@ -25,7 +25,10 @@ export default function CommonImage({
     return (
         <>
             {showLoader && (
-                <div className="w-full flex items-center justify-center">
+                <div
+                    style={{ height: height, width: width }}
+                    className="w-full flex items-center justify-center"
+                >
                     <BarLoader className="dark:invert" />
                 </div>
             )}

@@ -18,7 +18,7 @@ export default function SectionDetails({ sectionNumber }: Props) {
                 start: "0px bottom",
                 end: "bottom+=200px bottom",
             },
-            left: "-200px",
+
             stagger: 0.05,
             y: +30,
             duration: 1,

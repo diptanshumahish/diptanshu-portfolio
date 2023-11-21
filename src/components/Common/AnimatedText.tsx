@@ -20,7 +20,7 @@ export default function AnimatedText({ content }: Props) {
                 start: "top bottom",
                 end: "bottom+=300px bottom",
             },
-            left: "-200px",
+
             stagger: 0.05,
             y: +120,
             duration: 1,
