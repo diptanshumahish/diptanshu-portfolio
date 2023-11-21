@@ -12,6 +12,7 @@ export default function AnimatedText({ content }: Props) {
     const aniText = useRef(null);
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+
         const text = SplitType.create(aniText.current!, { types: "chars" });
         const charText = text.chars;
         gsap.from(charText, {
@@ -19,7 +20,7 @@ export default function AnimatedText({ content }: Props) {
                 trigger: aniText.current,
                 start: "top bottom",
                 end: "bottom+=300px bottom",
-                scrub: true,
+                scrub: 1,
             },
             left: "-200px",
             stagger: 0.05,
