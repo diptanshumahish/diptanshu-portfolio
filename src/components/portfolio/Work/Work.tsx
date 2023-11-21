@@ -2,16 +2,16 @@ import AnimatedText from "@/components/Common/AnimatedText";
 import SectionDetails from "@/components/Common/SectionDetails";
 import React from "react";
 import WorkItem from "./WorkItem";
+import Heading from "@/components/Common/Heading";
 
 export default function Work() {
     return (
         <div className=" overflow-hidden">
-            <div className="lg:px-[5vw] py-[5vh] p-2  flex lg:flex-row flex-col justify-between lg:gap-0 gap-4 lg:items-center w-full">
-                <AnimatedText
-                    content={["Enough Talk", "Let's See", "My work"]}
-                />
-                <SectionDetails sectionNumber={1} />
-            </div>
+            <Heading
+                heading={["Enough Talk", "Let's See", "My work"]}
+                number={1}
+            />
+
             <div className="lg:h-[10vh]"></div>
 
             <div>

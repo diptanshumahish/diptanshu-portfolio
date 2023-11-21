@@ -12,7 +12,7 @@ export default function Header() {
             </div>
             {/* main imagery */}
             <div className="lg:px-[5vw] lg:py-[5vh] p-2 flex flex-col gap-4">
-                <div data-scroll data-scroll-speed="0.1">
+                <div>
                     <CommonImage
                         imageLink="/Assets/Header/r1.svg"
                         alt="Imagery1"
@@ -45,7 +45,7 @@ export default function Header() {
                         className="w-full h-auto"
                     /> */}
                 </div>
-                <div data-scroll data-scroll-speed="0.2">
+                <div>
                     <CommonImage
                         imageLink="/Assets/Header/r3.svg"
                         alt="Imagery3"

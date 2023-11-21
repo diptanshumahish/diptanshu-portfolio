@@ -5,6 +5,7 @@ import SplitType from "split-type";
 
 interface Props {
     sectionNumber: number;
+    ref: React.MutableRefObject<null>;
 }
 
 export default function SectionDetails({ sectionNumber }: Props) {

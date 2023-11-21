@@ -1,31 +1,61 @@
 "use client";
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useCallback, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 
 interface Props {
     content: string[];
+    ref: React.MutableRefObject<null>;
 }
-
+gsap.registerPlugin(ScrollTrigger);
 export default function AnimatedText({ content }: Props) {
-    const aniText = useRef(null);
-    useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const text = SplitType.create(aniText.current!, { types: "chars" });
+    // const aniText = useRef(null);
+
+    // useLayoutEffect(() => {
+    //     // Ensure that the dependencies are typed correctly
+
+    //     // Ensure aniText.current is not null before proceeding
+    //     const aniTextElement = aniText.current;
+    //     if (!aniTextElement) return;
+
+    //     const text = SplitType.create(aniTextElement, { types: "chars" });
+    //     const charText = text.chars;
+
+    //     gsap.from(charText, {
+    //         // Object shorthand for better readability
+    //         scrollTrigger: {
+    //             trigger: aniTextElement,
+    //             start: "top bottom",
+    //             end: "bottom+=300px bottom",
+    //             // scrub: 1,
+    //         },
+    //         stagger: 0.05,
+    //         y: +120,
+    //         duration: 1,
+    //     });
+    // }, []);
+
+    const aniText = useCallback((aniTextElement: HTMLDivElement) => {
+        if (!aniTextElement) return;
+
+        const text = SplitType.create(aniTextElement, { types: "chars" });
         const charText = text.chars;
+
         gsap.from(charText, {
+            // Object shorthand for better readability
             scrollTrigger: {
-                trigger: aniText.current,
+                trigger: aniTextElement,
                 start: "top bottom",
                 end: "bottom+=300px bottom",
+                // scrub: 1,
             },
-
             stagger: 0.05,
             y: +120,
             duration: 1,
         });
     }, []);
+
     return (
         <div className="relative flex flex-col overflow-hidden" ref={aniText}>
             {content.map((ele, idx) => {

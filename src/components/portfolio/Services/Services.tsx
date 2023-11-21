@@ -2,16 +2,16 @@ import AnimatedText from "@/components/Common/AnimatedText";
 import SectionDetails from "@/components/Common/SectionDetails";
 import React from "react";
 import ServiceItem from "./ServiceItem";
+import Heading from "@/components/Common/Heading";
 
 export default function Services() {
     return (
         <div className="overflow-hidden h-min">
-            <div className="lg:px-[5vw] py-[5vh] p-2  flex lg:flex-row flex-col justify-between lg:gap-0 gap-4 lg:items-center w-full">
-                <AnimatedText
-                    content={["And Now ", "What Services", "Do I Offer?"]}
-                />
-                <SectionDetails sectionNumber={2} />
-            </div>
+            <Heading
+                heading={["And Now ", "What Services", "Do I Offer?"]}
+                number={2}
+                key="Services"
+            />
             <div className=" py-4 overflow-hidden">
                 <ServiceItem
                     bgColor="#C8ADFF"

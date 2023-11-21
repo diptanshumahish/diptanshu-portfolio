@@ -4,13 +4,15 @@ import React from "react";
 import Image from "next/image";
 import ContactForm from "./ContactForm";
 import CommonImage from "@/components/Common/CommonImage";
+import Heading from "@/components/Common/Heading";
 export default function Contact() {
     return (
         <div>
-            <div className="lg:px-[5vw] z-10 py-[5vh] p-2  flex lg:flex-row flex-col justify-between lg:gap-0 gap-4 lg:items-center w-full">
-                <AnimatedText content={["Now how ", "do we", "connect?"]} />
-                <SectionDetails sectionNumber={3} />
-            </div>
+            <Heading
+                heading={["Now how ", "do we", "connect?"]}
+                number={3}
+                key="Contact"
+            />
             <div className="h-[8vh] w-full" />
             <div className="flex lg:flex-row flex-col-reverse bg-[#111]   ">
                 {/* <Image
