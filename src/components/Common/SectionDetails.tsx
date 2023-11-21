@@ -17,7 +17,6 @@ export default function SectionDetails({ sectionNumber }: Props) {
                 trigger: secText.current,
                 start: "0px bottom",
                 end: "bottom+=200px bottom",
-                scrub: 1,
             },
             left: "-200px",
             stagger: 0.05,
