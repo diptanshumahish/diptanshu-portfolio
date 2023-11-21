@@ -20,7 +20,7 @@ export default function AnimatedText({ content }: Props) {
                 trigger: aniText.current,
                 start: "top bottom",
                 end: "bottom+=300px bottom",
-                scrub: 1,
+                // scrub: 1,
             },
             left: "-200px",
             stagger: 0.05,
