@@ -27,7 +27,7 @@ export default function Contact() {
                     classList="lg:w-[50%] w-full h-auto grayscale object-cover"
                     height={900}
                     width={900}
-                    imageLink="/Assets/Contact/me.png"
+                    imageLink="/Assets/Contact/me.webp"
                 />
                 <div className="lg:w-[50%] w-full h-full p-[5vw] ">
                     <div className="flex  items-center gap-4">

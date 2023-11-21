@@ -48,7 +48,7 @@ export default function AnimatedText({ content }: Props) {
                 trigger: aniTextElement,
                 start: "top bottom",
                 end: "bottom+=300px bottom",
-                // scrub: 1,
+                scrub: 1,
             },
             stagger: 0.05,
             y: +120,

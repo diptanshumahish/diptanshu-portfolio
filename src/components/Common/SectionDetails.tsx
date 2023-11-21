@@ -1,27 +1,48 @@
 "use client";
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useCallback, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface Props {
     sectionNumber: number;
     ref: React.MutableRefObject<null>;
 }
-
+gsap.registerPlugin(ScrollTrigger);
 export default function SectionDetails({ sectionNumber }: Props) {
-    const secText = useRef(null);
-    useLayoutEffect(() => {
-        const text = SplitType.create(secText.current!, { types: "chars" });
-        const charText = text.chars;
-        gsap.from(charText, {
-            scrollTrigger: {
-                trigger: secText.current,
-                start: "0px bottom",
-                end: "bottom+=200px bottom",
-            },
+    // const secText = useRef(null);
+    // useLayoutEffect(() => {
+    //     const text = SplitType.create(secText.current!, { types: "chars" });
+    //     const charText = text.chars;
+    //     gsap.from(charText, {
+    //         scrollTrigger: {
+    //             trigger: secText.current,
+    //             start: "0px bottom",
+    //             end: "bottom+=200px bottom",
+    //         },
 
+    //         stagger: 0.05,
+    //         y: +30,
+    //         duration: 1,
+    //     });
+    // }, []);
+
+    const secText = useCallback((aniTextElement: HTMLDivElement) => {
+        if (!aniTextElement) return;
+
+        const text = SplitType.create(aniTextElement, { types: "chars" });
+        const charText = text.chars;
+
+        gsap.from(charText, {
+            // Object shorthand for better readability
+            scrollTrigger: {
+                trigger: aniTextElement,
+                start: "top bottom",
+                end: "bottom+=300px bottom",
+                scrub: 1,
+            },
             stagger: 0.05,
-            y: +30,
+            y: +120,
             duration: 1,
         });
     }, []);
