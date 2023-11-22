@@ -37,8 +37,8 @@ export default function SectionDetails({ sectionNumber }: Props) {
             scrollTrigger: {
                 trigger: aniTextElement,
                 start: "top bottom",
-                end: "bottom-=300px bottom",
-                scrub: 1,
+                end: "bottom bottom",
+                scrub: true,
             },
             stagger: 0.05,
             y: +120,
