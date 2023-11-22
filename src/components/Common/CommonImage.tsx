@@ -43,7 +43,7 @@ export default function CommonImage({
                 height={height}
                 alt={alt}
                 className={classList}
-                onLoadingComplete={(image) => {
+                onLoad={() => {
                     setLoader(false);
                 }}
             />
