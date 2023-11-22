@@ -9,7 +9,7 @@ export default function Header() {
             <div className=" text-center" data-scroll data-scroll-speed="0.2">
                 <span className={`${hf.className}`}>diptanshu Mahish</span>
             </div>
-            <div className="lg:px-[5vw] lg:py-[5vh] p-2 flex flex-col gap-4">
+            <div className="lg:px-[5vw]  lg:py-[5vh] p-2 flex flex-col gap-4">
                 <div>
                     <Image
                         src="/Assets/Header/r1.svg"

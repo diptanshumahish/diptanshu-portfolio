@@ -49,14 +49,14 @@ export default function ServiceItem({
                 <span className="lg:text-[18px] text-[14px]">{details}</span>
             </div>
             <div className="lg:p-0 py-[4vh]">
-                <CommonImage
+                {/* <CommonImage
                     dataScroll={imageScrollSpeed}
                     imageLink={mainImage}
                     alt={name}
                     classList="w-full"
                     height={1200}
                     width={1400}
-                />
+                /> */}
                 <Image
                     src={mainImage}
                     height={1200}

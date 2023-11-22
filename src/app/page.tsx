@@ -12,8 +12,7 @@ export default function Home() {
         <main>
             <Navbar />
             <SmoothScrollProvider options={{ smooth: true }}>
-                <Bakcground />
-
+                {/* <Bakcground /> */}
                 <Header />
                 <Work />
                 <Services />

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { BarLoader } from "react-spinners";
+import { BarLoader, BounceLoader } from "react-spinners";
 
 interface Props {
     imageLink: string;
@@ -29,7 +29,7 @@ export default function CommonImage({
                     style={{ height: height, width: width }}
                     className="w-full flex items-center justify-center"
                 >
-                    <BarLoader className="dark:invert" />
+                    <BounceLoader />
                 </div>
             )}
 
@@ -45,7 +45,6 @@ export default function CommonImage({
                 className={classList}
                 onLoadingComplete={(image) => {
                     setLoader(false);
-                    image.classList.remove("max-h-0");
                 }}
             />
         </>
