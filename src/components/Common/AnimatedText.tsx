@@ -28,6 +28,9 @@ export default function AnimatedText({ content }: Props) {
                 start: "top bottom",
                 end: "bottom+=300px bottom",
                 scrub: true,
+                alert(message) {
+                    console.log("hi");
+                },
             },
             stagger: 0.05,
             y: +120,

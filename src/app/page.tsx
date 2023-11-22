@@ -1,3 +1,4 @@
+"use client";
 import Bakcground from "@/components/Common/Bakcground";
 import Footer from "@/components/Common/Footer";
 import { SmoothScrollProvider } from "@/components/Locomotive/SmoothScroll";
