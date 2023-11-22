@@ -5,7 +5,7 @@ export default function Bakcground() {
         <div
             data-scroll
             data-scroll-speed="0.6"
-            className="absolute -z-10 opacity-50"
+            className="absolute -z-10 top-0 left-0 right-0 opacity-50"
         >
             <Image
                 src="/Assets/back.svg"

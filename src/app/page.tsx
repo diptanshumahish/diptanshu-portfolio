@@ -9,14 +9,14 @@ import Work from "@/components/portfolio/Work/Work";
 
 export default function Home() {
     return (
-        <main>
+        <main className="relative">
             <Navbar />
             <SmoothScrollProvider options={{ smooth: true }}>
-                <Bakcground />
                 <Header />
                 <Work />
                 <Services />
                 <Contact />
+                <Bakcground />
             </SmoothScrollProvider>
             <Footer />
         </main>
