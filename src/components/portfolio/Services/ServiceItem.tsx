@@ -57,14 +57,13 @@ export default function ServiceItem({
                     height={1200}
                     width={1400}
                 />
-                {/* <Image
-                   
+                <Image
                     src={mainImage}
                     height={1200}
                     width={1400}
                     alt={name}
                     className="w-full "
-                /> */}
+                />
             </div>
         </div>
     );

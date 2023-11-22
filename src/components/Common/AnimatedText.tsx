@@ -48,7 +48,6 @@ export default function AnimatedText({ content }: Props) {
                 start: "top bottom",
                 end: "bottom bottom",
                 scrub: 2,
-                markers: true,
             },
             stagger: 0.05,
             y: +120,
