@@ -9,33 +9,13 @@ interface Props {
 }
 gsap.registerPlugin(ScrollTrigger);
 export default function AnimatedText({ content }: Props) {
-    // const aniText = useRef(null);
+    const aniText = useRef(null);
 
-    // useLayoutEffect(() => {
-    //     // Ensure that the dependencies are typed correctly
+    useLayoutEffect(() => {
+        // Ensure that the dependencies are typed correctly
 
-    //     // Ensure aniText.current is not null before proceeding
-    //     const aniTextElement = aniText.current;
-    //     if (!aniTextElement) return;
-
-    //     const text = SplitType.create(aniTextElement, { types: "chars" });
-    //     const charText = text.chars;
-
-    //     gsap.from(charText, {
-    //         // Object shorthand for better readability
-    //         scrollTrigger: {
-    //             trigger: aniTextElement,
-    //             start: "top bottom",
-    //             end: "bottom+=300px bottom",
-    //             // scrub: 1,
-    //         },
-    //         stagger: 0.05,
-    //         y: +120,
-    //         duration: 1,
-    //     });
-    // }, []);
-
-    const aniText = useCallback((aniTextElement: HTMLDivElement) => {
+        // Ensure aniText.current is not null before proceeding
+        const aniTextElement = aniText.current;
         if (!aniTextElement) return;
 
         const text = SplitType.create(aniTextElement, { types: "chars" });
@@ -46,7 +26,7 @@ export default function AnimatedText({ content }: Props) {
             scrollTrigger: {
                 trigger: aniTextElement,
                 start: "top bottom",
-                end: "bottom+=300 bottom",
+                end: "bottom+=300px bottom",
                 scrub: true,
             },
             stagger: 0.05,
@@ -54,6 +34,26 @@ export default function AnimatedText({ content }: Props) {
             duration: 1,
         });
     }, []);
+
+    // const aniText = useCallback((aniTextElement: HTMLDivElement) => {
+    //     if (!aniTextElement) return;
+
+    //     const text = SplitType.create(aniTextElement, { types: "chars" });
+    //     const charText = text.chars;
+
+    //     gsap.from(charText, {
+    //         // Object shorthand for better readability
+    //         scrollTrigger: {
+    //             trigger: aniTextElement,
+    //             start: "top bottom",
+    //             end: "bottom+=300 bottom",
+    //             scrub: true,
+    //         },
+    //         stagger: 0.05,
+    //         y: +120,
+    //         duration: 1,
+    //     });
+    // }, []);
 
     return (
         <div
