@@ -25,10 +25,7 @@ export default function CommonImage({
     return (
         <>
             {showLoader && (
-                <div
-                    style={{ height: height, width: width }}
-                    className="w-full flex items-center justify-center"
-                >
+                <div className="w-full flex items-center justify-center">
                     <BounceLoader />
                 </div>
             )}
