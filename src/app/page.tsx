@@ -16,7 +16,7 @@ export default function Home() {
                 <Work />
                 <Services />
                 <Contact />
-                <Bakcground />
+                {/* <Bakcground /> */}
             </SmoothScrollProvider>
             <Footer />
         </main>
