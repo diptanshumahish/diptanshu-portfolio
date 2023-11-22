@@ -46,8 +46,9 @@ export default function AnimatedText({ content }: Props) {
             scrollTrigger: {
                 trigger: aniTextElement,
                 start: "top bottom",
-                end: "bottom+=100px bottom",
-                scrub: 1,
+                end: "bottom bottom",
+                scrub: 2,
+                markers: true,
             },
             stagger: 0.05,
             y: +120,
