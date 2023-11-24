@@ -1,5 +1,4 @@
-"use client";
-import React, { useCallback, useLayoutEffect, useRef } from "react";
+import React, { useCallback, useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
@@ -11,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function AnimatedText({ content }: Props) {
     const aniText = useRef(null);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         // Ensure that the dependencies are typed correctly
 
         // Ensure aniText.current is not null before proceeding
