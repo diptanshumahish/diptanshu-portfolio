@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function AnimatedText({ content }: Props) {
     const aniText = useRef(null);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const aniTextElement = aniText.current;
         if (!aniTextElement) return;
 
@@ -29,6 +29,7 @@ export default function AnimatedText({ content }: Props) {
             y: +120,
             duration: 1,
         });
+        gsap.updateRoot(100);
     }, [aniText]);
 
     // const aniText = useCallback((aniTextElement: HTMLDivElement) => {
