@@ -1,6 +1,6 @@
-"use client";
 import Bakcground from "@/components/Common/Bakcground";
 import Footer from "@/components/Common/Footer";
+import Heading from "@/components/Common/Heading";
 import { SmoothScrollProvider } from "@/components/Locomotive/SmoothScroll";
 import Contact from "@/components/portfolio/Contact/Contact";
 import Header from "@/components/portfolio/Header/Header";
@@ -14,10 +14,14 @@ export default function Home() {
             <Navbar />
             <SmoothScrollProvider options={{ smooth: true }}>
                 <Header />
+                <Heading
+                    heading={["Enough Talk", "Let's See", "My work"]}
+                    number={1}
+                />
                 <Work />
                 <Services />
                 <Contact />
-                {/* <Bakcground /> */}
+                <Bakcground />
             </SmoothScrollProvider>
             <Footer />
         </main>

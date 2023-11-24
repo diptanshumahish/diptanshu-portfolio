@@ -1,17 +1,9 @@
-import AnimatedText from "@/components/Common/AnimatedText";
-import SectionDetails from "@/components/Common/SectionDetails";
 import React from "react";
 import WorkItem from "./WorkItem";
-import Heading from "@/components/Common/Heading";
 
 export default function Work() {
     return (
         <div className=" overflow-hidden">
-            <Heading
-                heading={["Enough Talk", "Let's See", "My work"]}
-                number={1}
-            />
-
             <div className="lg:h-[10vh]"></div>
 
             <div>
