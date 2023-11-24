@@ -11,9 +11,6 @@ export default function AnimatedText({ content }: Props) {
     const aniText = useRef(null);
 
     useEffect(() => {
-        // Ensure that the dependencies are typed correctly
-
-        // Ensure aniText.current is not null before proceeding
         const aniTextElement = aniText.current;
         if (!aniTextElement) return;
 
@@ -21,21 +18,18 @@ export default function AnimatedText({ content }: Props) {
         const charText = text.chars;
 
         gsap.from(charText, {
-            // Object shorthand for better readability
             scrollTrigger: {
                 trigger: aniTextElement,
                 start: "top bottom",
                 end: "bottom+=300px bottom",
                 scrub: true,
-                alert(message) {
-                    console.log("hi");
-                },
+                markers: true,
             },
             stagger: 0.05,
             y: +120,
             duration: 1,
         });
-    }, []);
+    }, [aniText]);
 
     // const aniText = useCallback((aniTextElement: HTMLDivElement) => {
     //     if (!aniTextElement) return;
