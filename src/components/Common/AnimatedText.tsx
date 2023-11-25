@@ -29,7 +29,7 @@ export default function AnimatedText({ content }: Props) {
             y: +120,
             duration: 1,
         });
-        gsap.updateRoot(100);
+        gsap.updateRoot(1000);
     }, [aniText]);
 
     // const aniText = useCallback((aniTextElement: HTMLDivElement) => {
