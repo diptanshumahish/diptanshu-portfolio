@@ -27,7 +27,7 @@ export default function Header2() {
                 className="aspect-[2.28] object-contain object-center w-full overflow-hidden mt-6 max-md:max-w-full"
             />
             <div className="w-full mt-6 max-md:max-w-full">
-                <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+                <div className="gap-2 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                     <div className="flex flex-col items-stretch w-[78%] max-md:w-full max-md:ml-0">
                         <div className="border bg-stone-800 grow w-full mx-auto pl-8 pr-14 pt-12 pb-3.5 rounded-2xl border-solid border-black max-md:max-w-full max-md:mt-6 max-md:px-5">
                             <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
@@ -67,7 +67,7 @@ export default function Header2() {
                                             </span>
                                         </div>
                                         <div className="mt-2 max-md:max-w-full">
-                                            <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+                                            <div className="gap-2 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                                                 <div className="flex flex-col items-stretch w-[52%] max-md:w-full max-md:ml-0">
                                                     <div className="text-white text-6xl font-medium leading-[86px] mr-0 mt-3 max-md:max-w-full max-md:text-4xl max-md:leading-[59px]">
                                                         <span className="font-medium">

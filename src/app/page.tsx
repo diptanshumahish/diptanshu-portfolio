@@ -14,8 +14,8 @@ export default function Home() {
         <main className="relative">
             <Navbar />
             <SmoothScrollProvider options={{ smooth: true }}>
-                {/* <Header /> */}
-                <Header2 />
+                <Header />
+                {/* <Header2 /> */}
                 <Heading
                     heading={["Enough Talk", "Let's See", "My work"]}
                     number={1}
