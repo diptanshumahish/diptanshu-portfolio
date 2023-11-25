@@ -27,7 +27,7 @@ export default function ServiceItem({
     return (
         <div
             style={{ backgroundColor: `${bgColor}` }}
-            className="px-[5vw] py-[8%] relative  lg:h-fit h-[100vh]    w-full overflow-hidden"
+            className="px-[5vw] py-[8%] relative     w-full overflow-hidden"
         >
             <Image
                 src={bgImage}
@@ -57,13 +57,7 @@ export default function ServiceItem({
                     height={1200}
                     width={1400}
                 /> */}
-                <Image
-                    src={mainImage}
-                    height={1200}
-                    width={1400}
-                    alt={name}
-                    className="w-full "
-                />
+                <img src={mainImage} alt={name} className="w-full " />
             </div>
         </div>
     );
