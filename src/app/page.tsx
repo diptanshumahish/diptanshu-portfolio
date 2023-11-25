@@ -4,6 +4,7 @@ import Heading from "@/components/Common/Heading";
 import { SmoothScrollProvider } from "@/components/Locomotive/SmoothScroll";
 import Contact from "@/components/portfolio/Contact/Contact";
 import Header from "@/components/portfolio/Header/Header";
+import Header2 from "@/components/portfolio/Header/Header2";
 import Navbar from "@/components/portfolio/Navbar/Navbar";
 import Services from "@/components/portfolio/Services/Services";
 import Work from "@/components/portfolio/Work/Work";
@@ -14,6 +15,7 @@ export default function Home() {
             <Navbar />
             <SmoothScrollProvider options={{ smooth: true }}>
                 {/* <Header /> */}
+                <Header2 />
                 <Heading
                     heading={["Enough Talk", "Let's See", "My work"]}
                     number={1}
