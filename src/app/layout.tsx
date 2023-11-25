@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     },
     authors: [{ name: "Diptanshu Mahish", url: "https://diptanshumahish.me" }],
     category: "Portfolio Websites",
-    themeColor: "#EA899A",
     abstract:
         "Diptanshu Mahish | Portfolio Website | UI/UX | Front end developer | Flutter | NextJS | Shop",
     keywords: [
@@ -23,7 +22,6 @@ export const metadata: Metadata = {
         "Nextjs Diptanshu Mahish",
     ],
     robots: { follow: true },
-    viewport: { width: "device-width", initialScale: 1 },
     assets: "https://diptanshumahish.me/banner.png",
     twitter: {
         card: "summary_large_image",
@@ -48,6 +46,10 @@ export const metadata: Metadata = {
         locale: "IN",
         alternateLocale: "US",
     },
+    metadataBase: new URL("https://diptanshumahish.me"),
+};
+export const viewport: Viewport = {
+    themeColor: "#353451",
 };
 
 const generalSans = localFont({

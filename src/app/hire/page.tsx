@@ -1,19 +1,13 @@
-import AnimatedText from "@/components/Common/AnimatedText";
-import SectionDetails from "@/components/Common/SectionDetails";
-import React from "react";
-import Image from "next/image";
-import ContactForm from "./ContactForm";
 import CommonImage from "@/components/Common/CommonImage";
-import Heading from "@/components/Common/Heading";
-export default function Contact() {
-    return (
-        <div className="">
-            <Heading
-                heading={["Now how ", "do we", "connect?"]}
-                number={3}
-                key="Contact"
-            />
+import ContactForm from "@/components/portfolio/Contact/ContactForm";
+import Navbar from "@/components/portfolio/Navbar/Navbar";
+import Image from "next/image";
+import React from "react";
 
+export default function page() {
+    return (
+        <div>
+            <Navbar />
             <div className="flex lg:flex-row flex-col-reverse bg-[#111]   ">
                 <CommonImage
                     alt="Diptanshu Mahish"
