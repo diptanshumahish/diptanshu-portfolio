@@ -27,7 +27,7 @@ export default function ServiceItem({
     return (
         <div
             style={{ backgroundColor: `${bgColor}` }}
-            className="px-[5vw] py-[8%] relative max-h-[150vh] h-[150vh]   w-full overflow-hidden"
+            className="px-[5vw] py-[8%] relative    w-full overflow-hidden"
         >
             <Image
                 src={bgImage}

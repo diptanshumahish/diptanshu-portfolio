@@ -23,7 +23,6 @@ export default function AnimatedText({ content }: Props) {
                 start: "top bottom",
                 end: "bottom+=300px bottom",
                 scrub: true,
-                markers: true,
             },
             stagger: 0.05,
             y: +120,
