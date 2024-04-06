@@ -12,7 +12,7 @@ export default function Footer() {
                     width={200}
                     alt="dptsnhu logo full"
                 />
-                <span> &copy; Diptanshu Mahish 2023</span>
+                <span> &copy; Diptanshu Mahish 2024</span>
                 <div className="flex justify-center items-center gap-3">
                     <Link href="/" className="underline">
                         Portfolio
