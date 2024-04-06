@@ -43,8 +43,31 @@ export default function Work() {
                     backgroundScroll="-0.1"
                     imageScroll="-0.7"
                     subTextColor="#FAD4C1"
-                    key="02"
+                    key="021"
                     contentNumber="02"
+                    backgroundColor="293960"
+                    backgroundImage="/Assets/back-dark-2.svg"
+                    contentFullDesc="Cursed diary is a creepy pasta website, where you can submit horror and such stuff, readers can read stuff easily and with a minimal and clean UI, it becomes easy for the users to navigate between pages and read their favorite content with ease. Proper SEO practices have been put to use here and every page is well shareable"
+                    contentMiniDesc="Creepypasta blogs made using the notion databases"
+                    contentName="Cursed diary : Creepypasta content"
+                    contentTags={[
+                        "Next JS",
+                        "Tailwind CSS",
+                        "Typescript",
+                        "Notion",
+                        "Node JS",
+                        "Vercel",
+                    ]}
+                    mainImagery="/Assets/work/cd.webp"
+                    LiveLink="https://curseddiary.vercel.app/"
+                    githubLink="https://github.com/diptanshumahish/curseddiary"
+                />
+                <WorkItem
+                    backgroundScroll="-0.1"
+                    imageScroll="-0.7"
+                    subTextColor="#FAD4C1"
+                    key="02"
+                    contentNumber="03"
                     backgroundColor="111"
                     backgroundImage="/Assets/back-dark-2.svg"
                     contentFullDesc=" Katze Speaks is a full-stack creepy pasta website with a sleek, minimalist UI, crafted entirely using the MERN stack. The platform invites users to share and explore chilling experiences through blogs and narratives in the horror genre. With a focus on user engagement, Katze Speaks provides a seamless experience for both contributors and readers. The website is not only a hub for spooky tales but also prioritizes visibility with SEO optimization. Katze Speaks, an immersive space for horror enthusiasts, demonstrates the developer's expertise in creating a captivating, user-friendly MERN stack application tailored for the eerie and unknown."
@@ -70,7 +93,7 @@ export default function Work() {
                     imageScroll="-0.5"
                     subTextColor="#FAD4C1"
                     key="03"
-                    contentNumber="03"
+                    contentNumber="04"
                     backgroundColor="472C1F"
                     backgroundImage="/Assets/back-dark.svg"
                     contentFullDesc="Introducing 'Wally,' a visually stunning Flutter-based app, now available on the Play Store. Embracing a super aesthetic and clean UI with minimalistic designs, Wally stands out as a go-to destination for beautiful wallpapers. Every wallpaper featured on the app is exclusively crafted by the developer. The backend is seamlessly hosted on cyclic.sh, while images are served from Playbook. Wally provides users with an immersive experience, offering a curated collection of eye-catching wallpapers, making it the perfect companion for those seeking a touch of elegance for their device backgrounds"
@@ -93,7 +116,7 @@ export default function Work() {
                     imageScroll="-0.6"
                     subTextColor="#FFADDE"
                     key="04"
-                    contentNumber="04"
+                    contentNumber="05"
                     backgroundColor="0C1E25"
                     backgroundImage="/Assets/back-dark-2.svg"
                     contentFullDesc="I noticed  that Zen clock is a pretty cool productivity thing. I myself was using one on my old  Tablet. I noticed there were too many ads. I thus decided to make my own Zen clock along with a Pomodoro timer. This ap allows various scenes and also plays ambient music if you want to play. The scenes are basically the various themes in the app. Which ranges from aesthetic images to amoled black or pure white. This app as of now is available on Play Store."
