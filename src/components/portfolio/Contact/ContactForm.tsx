@@ -19,6 +19,7 @@ export default function ContactForm() {
                     name="_next"
                     value="https://diptanshumahish.me/thank-you"
                 ></input>
+                <input type="hidden" name="_captcha" value="false"></input>
                 <ContactFormInner
                     heading="Your full name"
                     name="name"
