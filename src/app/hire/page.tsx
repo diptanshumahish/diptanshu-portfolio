@@ -1,4 +1,5 @@
 import CommonImage from "@/components/Common/CommonImage";
+import Footer from "@/components/Common/Footer";
 import ContactForm from "@/components/portfolio/Contact/ContactForm";
 import Navbar from "@/components/portfolio/Navbar/Navbar";
 import Image from "next/image";
@@ -8,7 +9,7 @@ export default function page() {
     return (
         <div>
             <Navbar />
-            <div className="flex lg:flex-row flex-col-reverse bg-[#111]   ">
+            <div className="flex lg:flex-row flex-col-reverse bg-[#111]  ">
                 <CommonImage
                     alt="Diptanshu Mahish"
                     classList="lg:w-[50%] w-full h-auto grayscale object-cover"
@@ -16,7 +17,7 @@ export default function page() {
                     width={900}
                     imageLink="/Assets/Contact/me.webp"
                 />
-                <div className="lg:w-[50%] w-full h-full p-[5vw] ">
+                <div className="lg:w-[50%] w-full h-full p-[5vw] pt-[20vh] ">
                     <div className="flex  items-center gap-4">
                         <Image
                             src="/Assets/Contact/circle.svg"
@@ -33,6 +34,7 @@ export default function page() {
                     <ContactForm />
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

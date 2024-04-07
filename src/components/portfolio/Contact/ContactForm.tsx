@@ -1,5 +1,6 @@
 import React from "react";
 import ContactFormInner from "./ContactFormInner";
+import Footer from "@/components/Common/Footer";
 
 export default function ContactForm() {
     return (
@@ -44,6 +45,12 @@ export default function ContactForm() {
                     placeholder="for my new project!"
                     key="contact"
                 />
+                <ContactFormInner
+                    heading="Budget, if contacting for a project"
+                    name="budget"
+                    placeholder="$1000-$2000, 0 if not"
+                    key="budget"
+                />
                 <div className="flex flex-col  gap-3 text-white">
                     <span className="uppercase">Your Message</span>
                     <textarea
@@ -55,6 +62,9 @@ export default function ContactForm() {
                 <button className="bg-white p-2 rounded-lg" type="submit">
                     Let&apos;s Go!
                 </button>
+                <span className="text-sm text-white">
+                    (You will hear back from me ASAP)
+                </span>
             </form>
         </div>
     );
