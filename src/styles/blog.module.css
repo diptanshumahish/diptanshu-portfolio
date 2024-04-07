@@ -1,10 +1,15 @@
 .blogContainer {
     width: 100%;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12vh;
 }
 .blogContainer .articleContainer {
     min-width: 900px;
-    padding: 2% 10%;
+    padding: 2% 5%;
     -webkit-font-smoothing: antialiased;
 }
 

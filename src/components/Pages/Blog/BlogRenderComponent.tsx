@@ -18,41 +18,40 @@ export default async function BlogRenderComponent(props: ServerProps<"id">) {
 
     return (
         <div className={styles.blogContainer}>
-            <div className="w-full lg:h-[80vh] h-[70vh] relative">
+            {/* <div className="w-full lg:h-[80vh] h-[70vh] relative">
                 <Link
                     href="/blogs"
                     className="absolute lg:top-[15%] top-[20%] left-[5%] lg:left-[10%] text-yellow-100 border-b pointer-events-auto cursor-pointer z-10 flex items-center gap-2"
                 >
                     <ArrowLeft size={16} /> Back
                 </Link>
-                <Image
-                    unoptimized
-                    src={url}
-                    alt={title}
-                    height={1080}
-                    width={1920}
-                    placeholder="blur"
-                    blurDataURL={assets.blur_img}
-                    className="mb-4 w-full h-full object-cover rounded-md"
-                />
-                <div className="bg-gradient-to-b from-transparent to-theme-bg absolute inset-0  w-full" />
-                <div className="absolute bottom-[5%] flex flex-col gap-2 left-[5%] lg:left-[10%] lg:right-[10%] right-[5%] text-white">
-                    <h1 className="lg:text-5xl  text-4xl">{title}</h1>
+            </div> */}
+            <Image
+                unoptimized
+                src={url}
+                alt={title}
+                height={1080}
+                width={1920}
+                placeholder="blur"
+                blurDataURL={assets.blur_img}
+                className="mb-4 w-[90%] h-[60vh] object-cover rounded-md offsetstyle"
+            />
+            <div className=" flex flex-col gap-2 w-[90%] text-black py-8 border-b border-black border-dashed">
+                <h1 className="lg:text-5xl  text-4xl">{title}</h1>
 
-                    <p className="opacity-60 lg:max-w-[60%]">{desc}</p>
-                    <div className="flex items-center gap-4">
-                        <Calendar size={18} />
-                        <span>
-                            <span className="opacity-40">written on </span>
-                            <b className="opacity-100">
-                                {moment(date).format("dddd DD MMMM, YYYY")}
-                            </b>
-                        </span>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <Clock size={18} /> <ReadTimeClient />{" "}
-                        <span className="opacity-50">to read this</span>
-                    </div>
+                <p className="opacity-60 lg:max-w-[60%]">{desc}</p>
+                <div className="flex items-center gap-4">
+                    <Calendar size={18} />
+                    <span>
+                        <span className="opacity-40">written on </span>
+                        <b className="opacity-100">
+                            {moment(date).format("dddd DD MMMM, YYYY")}
+                        </b>
+                    </span>
+                </div>
+                <div className="flex items-center gap-4">
+                    <Clock size={18} /> <ReadTimeClient />{" "}
+                    <span className="opacity-50">to read this</span>
                 </div>
             </div>
             <div className={styles.articleContainer}>
