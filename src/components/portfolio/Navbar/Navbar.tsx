@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ShoppingBagIcon } from "lucide-react";
+import { Book, ShoppingBagIcon } from "lucide-react";
 export default function Navbar() {
     return (
-        <div className="fixed left-[5vw] right-[5vw] top-2 z-20   ">
-            <div className="relative backdrop-blur-md py-2 flex border bg-bg-back bg-opacity-20 border-black rounded-full justify-center items-center">
+        <div className="fixed left-[5vw] right-[5vw] top-2 z-20 ">
+            <div className="relative backdrop-blur-md lg:py-2 py-1 flex border bg-bg-back bg-opacity-20 border-black rounded-full justify-center items-center">
                 {" "}
                 <Link href="/" className="absolute left-6">
                     <Image
@@ -27,6 +27,12 @@ export default function Navbar() {
                         className="opacity-60 hover:opacity-100 transition-opacity lg:flex hidden"
                     >
                         <ShoppingBagIcon />
+                    </Link>
+                    <Link
+                        href="/blogs"
+                        className="opacity-60 hover:opacity-100 transition-opacity lg:flex hidden"
+                    >
+                        <Book />
                     </Link>
                     <Link
                         href="/hire"

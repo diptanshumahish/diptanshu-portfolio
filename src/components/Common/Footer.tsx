@@ -17,8 +17,11 @@ export default function Footer() {
                     <Link href="/" className="underline">
                         Portfolio
                     </Link>
-                    <Link href="/" className="underline">
+                    <Link href="/shop" className="underline">
                         Shop
+                    </Link>
+                    <Link href="/blogs" className="underline">
+                        Blogs
                     </Link>
                 </div>
             </div>
